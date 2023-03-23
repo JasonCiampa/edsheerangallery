@@ -10,8 +10,32 @@
     background-attachment: fixed;
   }
 
+  header {
+    display: flex;
+    align-items: center;
+    background-image: url("../images/sheeran_background.jpg");
+    background-size: 25%;
+  }
+
+  header img {
+    max-width: 200px;
+    padding: 2vh;
+  }
+
+  .right {
+    align-items: right;
+  }
+
+  header h2 {
+    font-size: 250%;
+    color: orange;
+    text-shadow: 2px 2px 1px white, -2px -2px 1px white, 2px -2px 1px white, -2px 2px 1px white;
+    margin: auto;
+  }
+
   body {
     font-family: Arial;
+    background-color: rgba(0, 0, 0, 0.4);
   }
   
   .row {
@@ -33,20 +57,42 @@
     max-width: 450px;
     width: 100%;
   }
+
+  footer {
+    padding: 3vh 0;
+    background-image: url("../images/sheeran_background.jpg");
+    background-size: 25%;
+  }
+
+  footer p {
+    color: orange;
+    text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+  }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media (max-width: 1000px) {
+  /* @media (max-width: 1000px) {
     .column {
         flex: 33%;
         max-width: 33%;
     }
-  }
+  } */
 
 
   @media (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
+    }
+
+    header {
+      flex-direction: column;
+    }
+
+    header h2 {
+      font-size: 150%;
     }
   }
   

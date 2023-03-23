@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="images/sheeran_logo.png">
     <link rel="stylesheet" href="styles/main.css">
 
     <title>Ed Sheeran Image Gallery</title>
 </head>
 <body>
     <header>
+        <img src="images/sheeran_logo.png" alt="Ed Sheeran Logo" title="Ed Sheeran Logo">
         <h2>Ed Sheeran Image Gallery</h2>
+        <img src="images/sheeran_logo.png" alt="Ed Sheeran Logo" title="Ed Sheeran Logo">
     </header>
     <main>
         <!-- Photo Grid -->
@@ -64,7 +67,15 @@
   
     </main>
     <footer>
-
+        <p>&copy; <span id="copyright"></span> Jason Ciampa</p>
     </footer>
+
+    <!-- Javascript - Get Current Year for the Footer -->
+    <script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
 </body>
 </html>
